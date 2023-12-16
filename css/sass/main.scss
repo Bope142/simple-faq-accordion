@@ -23,4 +23,126 @@ body {
 
 body::-webkit-scrollbar {
   display: none;
+  background: $white;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  background: $white;
+  position: relative;
+  flex-direction: column;
+}
+
+.container_section_bg {
+  flex: none;
+  background: url("../images/background-pattern-desktop.svg") center/cover
+    no-repeat;
+  height: 40%;
+  // width: 100%;
+}
+
+.container__faq {
+  display: flex;
+  overflow: hidden;
+  background: $white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  align-self: center;
+  width: 500px;
+  flex-direction: column;
+  padding: 35px;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(15%);
+  row-gap: 25px;
+  padding-bottom: 0;
+}
+
+.faq__header {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  & svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  & h1 {
+    font-family: $fontBold;
+    color: $darkPurple;
+    font-size: 2.2rem;
+  }
+}
+
+.faq__questions {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-bottom: 15px;
+  border-bottom: 0.8px solid rgba($darkPurple, 0.08);
+  & * {
+    transition: all 0.3s linear !important;
+  }
+  & .question__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & p {
+      font-family: $fontBold;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      &:hover {
+        color: #ad28eb;
+      }
+    }
+    & .btn-arrow {
+      background: none;
+      border: none;
+      outline: none;
+      flex: none;
+      & svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  & .question__text {
+    font-family: $fontMedium;
+    font-size: 0.9rem;
+    color: rgba($darkPurple, 0.4);
+    line-height: 1.1rem;
+    overflow: hidden;
+    height: auto;
+    transition: all 0.3s linear;
+  }
+}
+.is-invisible {
+  & .question__text {
+    height: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .container__faq {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container__faq {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container__faq {
+    width: 230px;
+  }
 }
