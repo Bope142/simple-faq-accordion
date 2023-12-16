@@ -1,0 +1,26 @@
+@import "reset.scss";
+@import "variable.scss";
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: $fontRegular;
+  position: relative;
+  height: 100vh;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

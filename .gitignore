@@ -2,3 +2,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+css/sass/dart-sass/
+css/sass/dart-sass/*
+*.exe
+*.snapshot
