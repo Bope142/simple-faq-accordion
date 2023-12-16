@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop view](./screenshot/screenshot_1.jpg)
-![Mobile view](./screenshot/screenshot_2.jpg)
+![Desktop view](./screenshot/screenshot_1.png)
+![Mobile view](./screenshot/screenshot_2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution ](https://www.frontendmentor.io/solutions/simple-faq-accordion-ui-eMuG8jXwQW)
+- Live Site URL: [website live](https://simple-faq-accordion.netlify.app/)
 
 ## My process
 
